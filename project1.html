@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam Vijay</title>
+    
+    <link rel="stylesheet" type="text/css" href="st.css">
+    <link href='https://fonts.googleapis.com/css?family=Amarante' rel='stylesheet'>
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js">
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <section class="header">
+       <nav class="head">
+           <a href ="project.html"><img id="logo" src="images/40.jpg"></a>
+           <div class="nav-links" id="navLinks">
+            
+               
+                <i class="fa fa-times  " id="hide" class="show" onclick="hideMenu();setTimeout(chngcolor,700)"></i>
+            
+          
+               <ul >
+
+                <li><a href="#header"><i class="fa fa-qrcode"></i>Home</a></li>
+                <li><a href="#about"><i class="fa fa-university"></i></i>Education</a></li>
+                <li><a href="#victory"><i class="fa fa-star"></i>Victory</a></li>
+                <!-- <li><a href="#"><i class="fa fa-link"></i>Shortcut</a></li> -->
+                   <li><a href="#conimg"><i class="fa fa-envelope"> </i>Contact</a></li>
+               </ul>
+           </div>
+           <i class="fa fa-bars " id="show" onclick="showMenu()"></i> 
+           
+       </nav>
+    <div class="text-box">
+        
+        <h1 id="name">Shivam Vijay</h1>
+        <p> Hi!This is Shivam vijay, I'm a Front-End Developer(till now, but wants to exceed it to full stack) and I aslo like to do Competitive Coding.  </p>
+        <a  class ="hero-btn" href="mailto:shivamvijay543@gmail.com" target="_blank">Visit us to know more</a>
+     
+    </div>  
+    <img  class="myimage" src="images/shivam.png (2).png">
+   </section>
+     
+   <section id="about">
+       <h1> Education</h1>
+       <p> I am currently a first year undergraduate student at IIT Kharagpur  doing B-Tech in Electrical Engineering departement. </p>
+
+       <div class="row">
+           <div class="aboutcol">
+               <h3>School</h3>
+               <p>I completed my schooling from B.N.V.P Sinear Secondary School and also  achieves the topper position in three consecutive classes 10th,11th and 12th </p>
+           </div>
+          
+           <div class="aboutcol">
+            <h3>Coaching </h3>
+            <p>After passing 12th with pretty good percentage (96.20%),I took the admission in Allen Coaching institute(Jaipue Branch,one year dropper batch,and firstly cleared jee main with 99.62 percentile and then cracked the  Jee Advance with All India Ranking:1465</p>
+        </div>
+        <div class="aboutcol">
+            <h3>College</h3>
+            <p>I am currently doing B-Tech in Electrical Engineering Departement at IIT Kharagpur.My first sem is over and now I am in second sem</p>
+        </div>
+       </div>
+   </section>
+   <!-- Victory -->
+   <section id="victory">
+       <h1>  Achievements</h1>
+      
+       <div class="row">
+           <div class=victorycol>
+               <img id="jee" src="images/10th.jpg">
+               <h3>JEE Advanced(2020)AIR:1465</h3>
+           </div>
+       
+       
+        <div class=victorycol>
+            <img id="board" src="images/jee.jpg">
+            <h3> 12th Board percentage:96.20%</h3>
+        </div>
+    </div>
+   </section>
+   <section id="conimg">
+       <div class="contact">
+           <h3>Contact</h3>
+       <div class="icons">
+           <a href="https://www.facebook.com/shivam.vijay.1612"  target="_blank"><i class="fa fa-facebook-f fa-2x"></i></a>
+           <a href="https://twitter.com/ShivamV22174889?s=09"  target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+           <a  href="https://www.linkedin.com/in/shivamvijay1465/"  target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+           <a href="https://github.com/shivam1234-hub"  target="_blank"><i class="fa fa-github fa-2x"></i></a>
+
+       </div>
+    </div>
+   </section>
+
+
+   <script>
+    var navLinks=document.getElementById("navLinks");
+   var Name=document.getElementById("name");
+    var menubar=document.getElementById("show");
+     function showMenu()
+    {
+    navLinks.style.right="0";
+
+   
+    menubar.style.color ="rgba(81, 80, 24, 0)";
+   
+    Name.style.color ="rgba(201, 195, 140, 0.347)";
+   
+    
+    }
+    
+    function hideMenu()
+   {
+    navLinks.style.right="-200px";
+    
+    
+   
+ 
+    Name.style.color="rgb(229, 255, 0)";
+
+    
+    }
+    function chngcolor()
+    {
+        menubar.style.color ="rgb(235, 231, 18)";
+    }
+   
+    </script>
+</body>
+</html> 
